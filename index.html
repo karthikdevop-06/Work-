@@ -3,102 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Practice Page - My Awesome Project</title>
+    <title>Git Practice Page - Visual Refresh Project</title>
     <style>
-        /* Basic CSS for a better look */
+        /* CHANGE: Updated base colors for a different feel */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New font */
+            margin: 0; /* Remove default body margin */
+            background-color: #e0f2f7; /* Light blue background */
+            color: #2c3e50; /* Darker text color */
             line-height: 1.6;
         }
         .container {
-            max-width: 800px;
+            max-width: 960px; /* Wider container */
             margin: 0 auto;
-            background-color: #fff;
+            background-color: #ffffff;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px; /* More rounded corners */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* More prominent shadow */
         }
-        h1 {
-            color: #0056b3; /* Darker blue */
+
+        /* CHANGE: New Hero Section Styling */
+        .hero-banner {
+            background-color: #3498db; /* Blue background */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 30px; /* Space below banner */
+            border-radius: 10px 10px 0 0; /* Rounded top corners */
+        }
+        .hero-banner h1 {
+            color: white; /* White text for h1 in banner */
+            font-size: 2.8em; /* Larger heading */
+            margin-bottom: 10px;
+        }
+        .hero-banner p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        h1, h2 {
+            /* CHANGE: Adjusted heading colors for new theme */
+            color: #2980b9; /* Darker blue */
             text-align: center;
             margin-bottom: 25px;
+            font-family: 'Georgia', serif; /* Serif font for headings */
         }
         h2 {
-            color: #007bff; /* Bright blue */
-            margin-top: 30px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #aed6f1; /* Lighter blue border */
+            padding-bottom: 8px;
+            text-align: left; /* Align h2 to left */
+            margin-left: 20px;
+            margin-right: 20px;
         }
         p {
             margin-bottom: 15px;
+            padding: 0 20px; /* Add padding to paragraphs */
         }
         ul {
-            list-style-type: disc;
+            list-style-type: none; /* Remove default bullet points */
             margin-left: 20px;
             margin-bottom: 15px;
+            padding-left: 0; /* Remove default ul padding */
+        }
+        ul li {
+            background-color: #f8fcfd; /* Very light blue background for list items */
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-left: 4px solid #5dade2; /* Blue left border */
+            border-radius: 4px;
         }
         footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9em;
-            color: #777;
+            color: #666;
             padding-top: 20px;
-            border-top: 1px dashed #ddd;
+            border-top: 1px solid #cce7f0; /* Lighter border */
         }
         .highlight {
-            background-color: #e6ffe6; /* Light green for updates */
+            background-color: #d4edda; /* Light green, updated to fit new theme */
+            color: #155724; /* Dark green text */
             padding: 5px 10px;
             border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn-call-to-action {
+            display: block;
+            width: fit-content;
+            margin: 25px auto;
+            padding: 12px 25px;
+            background-color: #27ae60; /* New green for button */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .btn-call-to-action:hover {
+            background-color: #229954;
+        }
+
+        /* CHANGE: Style for "New!" badge */
+        .new-badge {
+            background-color: #e74c3c; /* Red color */
+            color: white;
+            font-size: 0.75em;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin-left: 10px;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        /* CHANGE: Style for placeholder image */
+        .project-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
 
+    <header class="hero-banner">
+        <h1>Welcome to Our Evolved Git Project!</h1>
+        <p>This page showcases significant visual and content updates.</p>
+        <p>Get ready to see changes through Git push and pull!</p>
+    </header>
+
     <div class="container">
-        <h1>Welcome to Our Git Practice Project!</h1>
+        <p>This `index.html` file is now distinctly different from its previous versions. We've introduced a new visual theme and added more substantial content sections to make your Git merging and diffing practice more impactful.</p>
 
-        <p>This is a simple HTML page created to help you practice your Git `push` and `pull` commands. You'll be making changes here, committing them, and then syncing with a remote repository.</p>
+        <img src="https://via.placeholder.com/800x300/e0f2f7/2c3e50?text=Awesome+Project+Visuals" alt="Project Visuals" class="project-image">
 
-        <h2>Project Overview</h2>
-        <p>Our goal is to build a small informational website. This `index.html` file is the starting point.</p>
+
+        <h2>Project Overview & Latest Status</h2>
+        <p>Our goal is to continually improve this informational website. Each iteration brings new features and design refinements.</p>
         <ul>
-            <li><strong>Initial State:</strong> Basic structure and welcoming text.</li>
-            <li><strong>Future Plans:</strong> Add more sections, styling, and possibly JavaScript.</li>
-            <li><strong>Current Version:</strong> <span class="highlight">Version 1.0 - Initial Design.</span></li>
+            <li><strong>Current State:</strong> Significantly revamped design and content structure.</li>
+            <li><strong>Next Steps:</strong> Further content expansion, interactive elements, and responsiveness.</li>
+            <li><strong>Latest Release:</strong> <span class="highlight">Version 2.0 - Major Visual Overhaul.</span></li>
             </ul>
 
-        <h2>Tasks for Git Practice:</h2>
+        <h2>Our Core Services</h2>
+        <p>Explore the expanded range of services our dynamic project now offers:</p>
+        <ul>
+            <li><strong>Web Development:</strong> Crafting responsive and dynamic websites for modern needs.</li>
+            <li><strong>Git Training:</strong> Hands-on sessions to master version control from basics to advanced. <span class="new-badge">NEW!</span></li>
+            <li><strong>UI/UX Design:</strong> Creating intuitive and engaging user interfaces.</li>
+            <li><strong>Consulting:</strong> Expert advice on project setup, workflow optimization, and best practices.</li>
+        </ul>
+        <a href="#" class="btn-call-to-action">Discover All Services</a>
+
+
+        <h2>Git Practice Guidelines:</h2>
         <ol>
-            <li><strong>Initial Commit:</strong> Save this file as `index.html` and make your first commit.</li>
-            <li><strong>Push to GitHub:</strong> Create a new GitHub repository and push this file.</li>
-            <li><strong>Simulate Another Change (Pull Practice):</strong>
-                <ul>
-                    <li>Clone this repo to another location (or have a teammate make a change).</li>
-                    <li>Make a significant change in the *other* location (e.g., add a new paragraph under "Project Overview" or change the version number).</li>
-                    <li>Commit and push from the *other* location.</li>
-                    <li>Come back to *this* file in your original location and use `git pull` to get the updates!</li>
-                </ul>
-            </li>
-            <li><strong>Make More Changes:</strong>
-                <p class="highlight">
-                    This is a new line added during my Git practice session. I'm getting better at this!
-                </p>
-            </li>
-            <li><strong>Experiment with Conflicts:</strong> Try modifying the *same line* of code in two different local repositories and then pushing/pulling to see how Git handles conflicts.</li>
+            <li><strong>Stage and Commit:</strong> Save this file as `index.html` on your new branch, then commit these substantial changes.</li>
+            <li><strong>Push to Remote:</strong> Push your feature branch to GitHub for review (optional, but good practice).</li>
+            <li><strong>Merge into Main:</strong> Switch to your `main` branch and merge this feature branch. Observe how the visual changes instantly apply.</li>
+            <li><strong>Resolve Conflicts:</strong> If you've made conflicting changes on `main` since your branch started, you'll encounter a merge conflict – a great learning opportunity!</li>
+            <li><strong>Cleanup:</strong> After merging and pushing `main`, you can optionally delete your feature branch.</li>
         </ol>
 
-        <h2>Contact Us</h2>
-        <p>For any questions, feel free to contact our imaginary team at <a href="mailto:info@example.com">info@example.com</a>.</p>
-        <p>You can also find us on social media (links to be added later).</p>
+        <h2>Reach Out To Us</h2>
+        <p>We are always eager to connect! You can reach our dedicated support team via email or explore our social presence for updates.</p>
+        <p>Email: <a href="mailto:support@gitpractice.com">support@gitpractice.com</a> | Follow us on <a href="#">X (Twitter)</a> and <a href="#">LinkedIn</a>.</p>
 
     </div>
 
     <footer>
-        <p>&copy; 2025 Git Practice Project. All rights reserved. Designed for learning.</p>
-        </footer>
+        <p>&copy; 2025 Git Practice Project. All rights reserved. Version control powered by Git.</p>
+        <p>Last Updated: <span class="highlight">July 20, 2025</span></p>
+    </footer>
 
 </body>
 </html>
