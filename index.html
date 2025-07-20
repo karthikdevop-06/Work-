@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Practice Page - Team & Refine</title>
+    <title>Git Practice Page - Minor Updates</title>
     <style>
         /* Base styles (mostly carried over from previous, but can be tweaked) */
         body {
@@ -123,7 +123,7 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        /* CHANGE: New styles for the Team Section */
+        /* Team Section Styles (from previous) */
         .team-grid {
             display: flex;
             flex-wrap: wrap;
@@ -132,7 +132,7 @@
             padding: 20px;
         }
         .team-member {
-            background-color: #f0f8ff; /* Lightest blue for team cards */
+            background-color: #f0f8ff;
             border: 1px solid #cce7f0;
             border-radius: 8px;
             padding: 15px;
@@ -150,7 +150,7 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 10px;
-            border: 3px solid #3498db; /* Blue border for profile pic */
+            border: 3px solid #3498db;
         }
         .team-member h3 {
             margin: 10px 0 5px;
@@ -160,7 +160,23 @@
         .team-member p {
             font-size: 0.9em;
             color: #555;
-            padding: 0; /* Remove padding from general p */
+            padding: 0;
+        }
+        /* SLIGHT CHANGE: New style for a subtle blockquote */
+        blockquote {
+            background-color: #f0f4f7; /* Very light blue */
+            border-left: 5px solid #5dade2;
+            margin: 20px 40px;
+            padding: 15px 20px;
+            font-style: italic;
+            color: #444;
+            border-radius: 4px;
+        }
+        blockquote footer {
+            text-align: right;
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #888;
         }
     </style>
 </head>
@@ -170,7 +186,7 @@
         <h1>Welcome to Our Evolved Git Project!</h1>
         <p>This page showcases significant visual and content updates.</p>
         <p>Get ready to see changes through Git push and pull!</p>
-        <span class="new-badge" style="background-color: #f39c12; font-size: 0.9em; padding: 5px 12px;">NEW CONTENT ARRIVED!</span>
+        <span class="new-badge" style="background-color: #f39c12; font-size: 0.9em; padding: 5px 12px;">FRESH UPDATES!</span>
     </header>
 
     <div class="container">
@@ -184,15 +200,22 @@
         <ul>
             <li><strong>Current State:</strong> Significantly revamped design and content structure.</li>
             <li><strong>Next Steps:</strong> Further content expansion, interactive elements, and responsiveness.</li>
-            <li><strong>Latest Release:</strong> <span class="highlight">Version 2.1 - Team Section and Content Refinements.</span></li>
+            <li><strong>Latest Release:</strong> <span class="highlight">Version 2.2 - Minor Content Refinements.</span></li>
             </ul>
+
+        <blockquote>
+            "The best way to predict the future is to create it."
+            <footer>— Peter Drucker</footer>
+        </blockquote>
 
         <h2>Our Core Services</h2>
         <p>Explore the expanded range of services our dynamic project now offers:</p>
         <ul>
             <li><strong>Web Development:</strong> Crafting responsive and dynamic websites for modern needs.</li>
             <li><strong>Git Training:</strong> Hands-on sessions to master version control from basics to advanced. <span class="new-badge">UPDATED!</span></li>
-            <li><strong>UI/UX Design:</strong> Creating intuitive and engaging user interfaces.</li>
+            <li><strong>UI/UX Design:</strong> Creating intuitive and engaging user interfaces and user experiences.
+                <small>(Focus on accessibility)</small>
+            </li>
             <li><strong>Consulting:</strong> Expert advice on project setup, workflow optimization, and best practices.</li>
         </ul>
         <a href="#" class="btn-call-to-action">Discover All Services</a>
@@ -239,8 +262,8 @@
 
     <footer>
         <p>&copy; 2025 Git Practice Project. All rights reserved. Version control powered by Git.</p>
-        <p>Last Updated: <span class="highlight">July 20, 2025 (1:00 PM IST)</span></p>
-        </footer>
+        <p>Last Updated: <span class="highlight">July 20, 2025, 01:09 PM IST</span></p>
+    </footer>
 
 </body>
 </html>
