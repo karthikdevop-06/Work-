@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Practice Page - My Awesome Project</title>
+    <style>
+        /* Basic CSS for a better look */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3; /* Darker blue */
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        h2 {
+            color: #007bff; /* Bright blue */
+            margin-top: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            padding-top: 20px;
+            border-top: 1px dashed #ddd;
+        }
+        .highlight {
+            background-color: #e6ffe6; /* Light green for updates */
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Our Git Practice Project!</h1>
+
+        <p>This is a simple HTML page created to help you practice your Git `push` and `pull` commands. You'll be making changes here, committing them, and then syncing with a remote repository.</p>
+
+        <h2>Project Overview</h2>
+        <p>Our goal is to build a small informational website. This `index.html` file is the starting point.</p>
+        <ul>
+            <li><strong>Initial State:</strong> Basic structure and welcoming text.</li>
+            <li><strong>Future Plans:</strong> Add more sections, styling, and possibly JavaScript.</li>
+            <li><strong>Current Version:</strong> <span class="highlight">Version 1.0 - Initial Design.</span></li>
+            </ul>
+
+        <h2>Tasks for Git Practice:</h2>
+        <ol>
+            <li><strong>Initial Commit:</strong> Save this file as `index.html` and make your first commit.</li>
+            <li><strong>Push to GitHub:</strong> Create a new GitHub repository and push this file.</li>
+            <li><strong>Simulate Another Change (Pull Practice):</strong>
+                <ul>
+                    <li>Clone this repo to another location (or have a teammate make a change).</li>
+                    <li>Make a significant change in the *other* location (e.g., add a new paragraph under "Project Overview" or change the version number).</li>
+                    <li>Commit and push from the *other* location.</li>
+                    <li>Come back to *this* file in your original location and use `git pull` to get the updates!</li>
+                </ul>
+            </li>
+            <li><strong>Make More Changes:</strong>
+                <p class="highlight">
+                    This is a new line added during my Git practice session. I'm getting better at this!
+                </p>
+            </li>
+            <li><strong>Experiment with Conflicts:</strong> Try modifying the *same line* of code in two different local repositories and then pushing/pulling to see how Git handles conflicts.</li>
+        </ol>
+
+        <h2>Contact Us</h2>
+        <p>For any questions, feel free to contact our imaginary team at <a href="mailto:info@example.com">info@example.com</a>.</p>
+        <p>You can also find us on social media (links to be added later).</p>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Git Practice Project. All rights reserved. Designed for learning.</p>
+        </footer>
+
+</body>
+</html>
