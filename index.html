@@ -3,37 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Practice Page - Visual Refresh Project</title>
+    <title>Git Practice Page - Team & Refine</title>
     <style>
-        /* CHANGE: Updated base colors for a different feel */
+        /* Base styles (mostly carried over from previous, but can be tweaked) */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* New font */
-            margin: 0; /* Remove default body margin */
-            background-color: #e0f2f7; /* Light blue background */
-            color: #2c3e50; /* Darker text color */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #e0f2f7;
+            color: #2c3e50;
             line-height: 1.6;
         }
         .container {
-            max-width: 960px; /* Wider container */
+            max-width: 960px;
             margin: 0 auto;
             background-color: #ffffff;
             padding: 30px;
-            border-radius: 10px; /* More rounded corners */
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* More prominent shadow */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
 
-        /* CHANGE: New Hero Section Styling */
+        /* Hero Section */
         .hero-banner {
-            background-color: #3498db; /* Blue background */
+            background-color: #3498db;
             color: white;
             padding: 60px 20px;
             text-align: center;
-            margin-bottom: 30px; /* Space below banner */
-            border-radius: 10px 10px 0 0; /* Rounded top corners */
+            margin-bottom: 30px;
+            border-radius: 10px 10px 0 0;
         }
         .hero-banner h1 {
-            color: white; /* White text for h1 in banner */
-            font-size: 2.8em; /* Larger heading */
+            color: white;
+            font-size: 2.8em;
             margin-bottom: 10px;
         }
         .hero-banner p {
@@ -41,36 +41,36 @@
             opacity: 0.9;
         }
 
+        /* Headings */
         h1, h2 {
-            /* CHANGE: Adjusted heading colors for new theme */
-            color: #2980b9; /* Darker blue */
+            color: #2980b9;
             text-align: center;
             margin-bottom: 25px;
-            font-family: 'Georgia', serif; /* Serif font for headings */
+            font-family: 'Georgia', serif;
         }
         h2 {
             font-size: 1.8em;
-            border-bottom: 2px solid #aed6f1; /* Lighter blue border */
+            border-bottom: 2px solid #aed6f1;
             padding-bottom: 8px;
-            text-align: left; /* Align h2 to left */
+            text-align: left;
             margin-left: 20px;
             margin-right: 20px;
         }
         p {
             margin-bottom: 15px;
-            padding: 0 20px; /* Add padding to paragraphs */
+            padding: 0 20px;
         }
         ul {
-            list-style-type: none; /* Remove default bullet points */
+            list-style-type: none;
             margin-left: 20px;
             margin-bottom: 15px;
-            padding-left: 0; /* Remove default ul padding */
+            padding-left: 0;
         }
         ul li {
-            background-color: #f8fcfd; /* Very light blue background for list items */
+            background-color: #f8fcfd;
             margin-bottom: 8px;
             padding: 10px 15px;
-            border-left: 4px solid #5dade2; /* Blue left border */
+            border-left: 4px solid #5dade2;
             border-radius: 4px;
         }
         footer {
@@ -79,11 +79,11 @@
             font-size: 0.9em;
             color: #666;
             padding-top: 20px;
-            border-top: 1px solid #cce7f0; /* Lighter border */
+            border-top: 1px solid #cce7f0;
         }
         .highlight {
-            background-color: #d4edda; /* Light green, updated to fit new theme */
-            color: #155724; /* Dark green text */
+            background-color: #d4edda;
+            color: #155724;
             padding: 5px 10px;
             border-radius: 4px;
             font-weight: bold;
@@ -93,7 +93,7 @@
             width: fit-content;
             margin: 25px auto;
             padding: 12px 25px;
-            background-color: #27ae60; /* New green for button */
+            background-color: #27ae60;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -103,10 +103,8 @@
         .btn-call-to-action:hover {
             background-color: #229954;
         }
-
-        /* CHANGE: Style for "New!" badge */
         .new-badge {
-            background-color: #e74c3c; /* Red color */
+            background-color: #e74c3c;
             color: white;
             font-size: 0.75em;
             padding: 3px 8px;
@@ -115,8 +113,6 @@
             vertical-align: middle;
             font-weight: bold;
         }
-
-        /* CHANGE: Style for placeholder image */
         .project-image {
             display: block;
             max-width: 100%;
@@ -126,6 +122,46 @@
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+
+        /* CHANGE: New styles for the Team Section */
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .team-member {
+            background-color: #f0f8ff; /* Lightest blue for team cards */
+            border: 1px solid #cce7f0;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 3px solid #3498db; /* Blue border for profile pic */
+        }
+        .team-member h3 {
+            margin: 10px 0 5px;
+            color: #2980b9;
+            font-size: 1.3em;
+        }
+        .team-member p {
+            font-size: 0.9em;
+            color: #555;
+            padding: 0; /* Remove padding from general p */
+        }
     </style>
 </head>
 <body>
@@ -134,6 +170,7 @@
         <h1>Welcome to Our Evolved Git Project!</h1>
         <p>This page showcases significant visual and content updates.</p>
         <p>Get ready to see changes through Git push and pull!</p>
+        <span class="new-badge" style="background-color: #f39c12; font-size: 0.9em; padding: 5px 12px;">NEW CONTENT ARRIVED!</span>
     </header>
 
     <div class="container">
@@ -147,19 +184,43 @@
         <ul>
             <li><strong>Current State:</strong> Significantly revamped design and content structure.</li>
             <li><strong>Next Steps:</strong> Further content expansion, interactive elements, and responsiveness.</li>
-            <li><strong>Latest Release:</strong> <span class="highlight">Version 2.0 - Major Visual Overhaul.</span></li>
+            <li><strong>Latest Release:</strong> <span class="highlight">Version 2.1 - Team Section and Content Refinements.</span></li>
             </ul>
 
         <h2>Our Core Services</h2>
         <p>Explore the expanded range of services our dynamic project now offers:</p>
         <ul>
             <li><strong>Web Development:</strong> Crafting responsive and dynamic websites for modern needs.</li>
-            <li><strong>Git Training:</strong> Hands-on sessions to master version control from basics to advanced. <span class="new-badge">NEW!</span></li>
+            <li><strong>Git Training:</strong> Hands-on sessions to master version control from basics to advanced. <span class="new-badge">UPDATED!</span></li>
             <li><strong>UI/UX Design:</strong> Creating intuitive and engaging user interfaces.</li>
             <li><strong>Consulting:</strong> Expert advice on project setup, workflow optimization, and best practices.</li>
         </ul>
         <a href="#" class="btn-call-to-action">Discover All Services</a>
 
+        <h2>Meet Our Team</h2>
+        <p>We are a passionate group dedicated to bringing you the best in web development and Git education.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=K" alt="Karthik Profile">
+                <h3>Karthik DevOp</h3>
+                <p>Founder & Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=A" alt="Alice Profile">
+                <h3>Alice Johnson</h3>
+                <p>Git Training Specialist</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=R" alt="Robert Profile">
+                <h3>Robert Smith</h3>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100x100?text=E" alt="Emily Profile">
+                <h3>Emily White</h3>
+                <p>Project Consultant</p>
+            </div>
+        </div>
 
         <h2>Git Practice Guidelines:</h2>
         <ol>
@@ -178,8 +239,8 @@
 
     <footer>
         <p>&copy; 2025 Git Practice Project. All rights reserved. Version control powered by Git.</p>
-        <p>Last Updated: <span class="highlight">July 20, 2025</span></p>
-    </footer>
+        <p>Last Updated: <span class="highlight">July 20, 2025 (1:00 PM IST)</span></p>
+        </footer>
 
 </body>
 </html>
